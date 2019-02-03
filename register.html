@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | Register</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body>
+    
+    <div class="login">
+        <div class="container">
+            <form onsubmit="return Validate();" action="index.html" name="vform" class="register-form">
+                <div id="username_div">
+                    <input type="text" name="username" id="username" placeholder="Enter a username...">
+                    <div id="name_error"></div>
+                </div>
+                <div id="password_div">
+                    <input type="password" name="password" id="password" placeholder="Enter your password...">
+                </div>
+                <div id="pass_confirm_div">
+                    <input type="password" name="password_confirm" id="password_confirm" placeholder="Confirm your password...">
+                    <div id="password_error"></div>
+                </div>
+                <div id="email_div">
+                    <input type="email" name="email" id="email" placeholder="Enter your Email-address...">
+                    <div id="email_error"></div>
+                </div>
+                <div id="country_div">
+                    <select name="country" id="country">
+                        <option value="select_country">Select your country...</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Finland">Finland</option>
+                    </select>
+                    <div id="country_error"></div>
+                </div>
+                <div id="tou_div">
+                    <input type="checkbox" name="tou" id="tou"><p id="" notchecked>I have read <a href="#">the terms of use</a></p>
+                    <div id="tou_error"></div>
+                </div>
+                <div id="notARobot_div">
+                    <input type="radio" name="notARobot" value="notARobot" id="notARobot" notchecked><p>Im not a robot</p>
+                    <div id="notARobot_error"></div>
+                </div>
+                <div id="about_div">
+                    <textarea placeholder="Describe yourself here..." name="about" id="about" cols="20" rows="5"></textarea>
+                    <div id="about_error"></div>
+                </div>
+                <button type="submit">Register</button>
+                <p class="message">Already Registered? <a href="#">Login</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button>Login</button>
+                <p class="message">Not Registered? <a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+    
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/validateform.js"></script>
+</body>
+</html>
